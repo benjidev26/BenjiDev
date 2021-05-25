@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {margin:0;
+
+    font-family: Arial, Helvetica, sans-serif
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif
+  }
+  li a2 {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace
+  }
+  li b2 {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color:  #bf00ff;
+  }
+.timer{
+    position: absolute;
+    left: 130px;
+    z-index: 3;
+
+}
+.timerA{
+    position: absolute;
+    left: 270px;
+    z-index: 3;
+}
+#score{
+    position: absolute;
+    left: 360px;
+    z-index: 3;
+}
+#game{
+    margin: auto;
+    width: 600px;
+    height: 200px;
+    border: 3px solid black;
+    top: 100px;
+    left: 0px;
+    position: relative;
+    background-color: rgb(45, 116, 145);
+    z-index: 3;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    font-family: arial;
+}
+#game:hover{
+    margin: auto;
+    width: 600px;
+    height: 200px;
+    border: 3px solid black;
+    top: 100px;
+    left: 0px;
+    position: relative;
+    background-color: rgb(45, 116, 145);
+    z-index: 3;
+    border-radius: 0px;
+    transition: 0.5s
+}
+#div1{
+    width: 600px;
+    height: 50px;
+    top: 150px;
+    position: absolute;
+    background-color: rgb(235, 217, 135);
+    overflow: hidden;
+
+}
+#cloud{
+    position: absolute;
+    top: 20px;
+    width: 60px;
+    height: 15px;
+    background-color: white;
+    left: 480px; 
+    animation: block 2s infinite linear;
+    z-index: 3;
+}
+#cloud2{
+    position: absolute;
+    top: 25px;
+    width: 30px;
+    height: 19px;
+    background-color: white;
+    left: 480px; 
+    animation: block 2s infinite linear;
+    
+}
+#cloud3{
+    position: absolute;
+    top: 55px;
+    width: 60px;
+    height: 20px;
+    background-color: white;
+    left: 380px; 
+    animation: block 3s infinite linear;
+}
+#cloud4{
+    position: absolute;
+    top: 45px;
+    width: 30px;
+    height: 10px;
+    background-color: white;
+    left: 380px; 
+    animation: block 3s infinite linear;
+    
+}
+#cloud5{
+    position: absolute;
+    top: 30px;
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    left: 400px; 
+    animation: block 10s infinite linear;
+}
+#cloud6{
+    position: absolute;
+    top: 40px;
+    width: 30px;
+    height: 15px;
+    background-color: white;
+    left: 360px; 
+    animation: block 10s infinite linear;
+    
+}
+
+@keyframes block{
+    0%{left: 480px;}
+    100%{left: -50px;}
+}
+#character{
+    width: 20px;
+    height: 40px;
+    background-color: red;
+    position:absolute;
+    top: 160px;
+    left: 50px;
+    z-index: 10;
+}
+.animate{
+    animation: jump 0.5s;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+#block{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(88, 161, 28);
+    position: absolute;
+    top: 180px;
+    left: 480px;
+    animation: block 0.9s infinite linear;
+    z-index: 3;
+}
+@keyframes block{
+    0%{left: 580px;}
+    100%{left: -10px;}
+}
+#btn{
+    position: absolute;
+    top: 100px;
+    left: 250px;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    border: solid 5px rgb(255, 6, 6);
+    border-radius: 20px;
+    transition: 1s;
+    z-index: 1000;
+    visibility: hidden;
+}
+#btn:hover{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: black;
+    color: white;
+    border: solid 5px rgb(10, 255, 2);
+    border-radius: 0px;
+    transition: 1s;
+}
+#text{
+    left: 10px;
+    position: absolute;
+}
+
+
+#cursor{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 4px solid rgb(255, 0, 0);
+    box-sizing: border-box;
+    transition: 0s;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+
